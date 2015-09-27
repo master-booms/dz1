@@ -1,0 +1,287 @@
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  background: url(../img/comppattern2.png) repeat;
+  font: normal 1em "fira_sanslight";
+  color: #4a545d;
+}
+
+.container-big {
+  min-width: 960px;
+  max-width: 1200px;
+  height: 100%;
+  margin: 0 auto;
+  position: relative;
+}
+
+.header-c {
+  height: 119px;
+  background: #eff3f7 url(../img/gradient.png) bottom center no-repeat;
+  position: relative;
+  margin-bottom: 39px;
+}
+
+.header-c .header-logo-link {
+  position: absolute;
+  top: 39px;
+  left: 0;
+}
+
+.header-c .social {
+  position: absolute;
+  right: 0;
+  top: 36px;
+}
+
+.header-c .header-logo-text {
+  position: absolute;
+  left: -9999px;
+}
+
+.social {
+  min-width: 246px;
+  margin: 0;
+  padding: 0;
+}
+
+.social .socials-item {
+  float: left;
+  list-style: none;
+  height: 47px;
+  width: 47px;
+  margin-left: 26px;
+}
+
+.social .socials-item:first-child {
+  margin-left: 0;
+}
+
+.social .socials-link {
+  background: url(../img/social-sprites.png) no-repeat;
+  display: block;
+  text-indent: -9999px;
+  height: 100%;
+  width: 100%;
+}
+
+.social .socials-link.vk {
+  background-position: 0 0;
+}
+
+.social .socials-link.vk:hover {
+  background-position: 0 -50px;
+}
+
+.social .socials-link.tw {
+  background-position: -52px 0;
+}
+
+.social .socials-link.tw:hover {
+  background-position: -51px -51px;
+}
+
+.social .socials-link.fb {
+  background-position: -101px -1px;
+}
+
+.social .socials-link.fb:hover {
+  background-position: -101px -51px;
+}
+
+.social .socials-link.git {
+  background-position: -151px -1px;
+}
+
+.social .socials-link.git:hover {
+  background-position: -151px -52px;
+}
+
+.main-content {
+  width: 650px;
+  float: right;
+  margin-bottom: 89px;
+}
+
+.footer-c {
+  background: #eff3f7 url(../img/gradient.png) top center no-repeat;
+  color: #606972;
+  font-family: 'fira_sanslight';
+  height: 80px;
+  margin-top: -80px;
+  min-width: 970px;
+}
+
+.footer-c .container {
+  padding-top: 23px;
+  position: relative;
+}
+
+.footer-c .copyright {
+  margin: 0 180px;
+  padding-top: 7px;
+  text-align: center;
+  font-size: 13px;
+}
+
+.footer-c .lock {
+  position: absolute;
+  top: 26px;
+  left: 30px;
+}
+
+.lock .lock-inner {
+  background: url(../img/zamok.png) no-repeat;
+  display: block;
+  height: 40px;
+  text-indent: -9999px;
+}
+
+.lock .lock-inner:hover {
+  text-decoration: underline;
+  background: url(../img/zamok_open.png) no-repeat;
+}
+
+.container {
+  width: 960px;
+  margin: 0 auto;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+}
+
+.container:before, .clearfix:before,
+.container:after, .clearfix:after {
+  content: " ";
+  display: table;
+}
+
+.container:after, .clearfix:after {
+  clear: both;
+}
+
+.sidebar {
+  width: 248px;
+  float: left;
+}
+
+.sidebar .nav {
+  background: #eff3f7;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+  margin-bottom: 25px;
+  overflow: hidden;
+}
+
+.sidebar .nav-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.sidebar .nav-item {
+  margin: 0 10px;
+  border-top: 2px solid #3ba8c0;
+}
+
+.sidebar .nav-item:first-child {
+  border-top: none;
+}
+
+.nav-item.current {
+  background: #3ba8c0;
+  margin: 0;
+  padding-left: 10px;
+  margin-bottom: -2px;
+}
+
+.nav-item.current .nav-link {
+  color: #fbfcfd;
+  font-size: 20px;
+}
+
+.nav-item.current .nav-link:hover {
+  color: #fbfcfd;
+}
+
+.nav-item .nav-link {
+  font-family: 'fira_sansbook';
+  font-size: 20px;
+  color: #959aa8;
+  text-decoration: none;
+  display: block;
+  padding: 17px;
+}
+
+.nav-item .nav-link:hover {
+  color: #3ba8c0;
+}
+
+.contacts .contacts-list {
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+  overflow: hidden;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.contacts-item-head {
+  color: #fff;
+  background: #3BA8C0;
+}
+
+.contacts-item-head .contacts-text-head {
+  padding: 5px 20px;
+  color: #FBFCFD;
+  font-family: "fira_sansbook";
+  font-size: 21px;
+  font-weight: 300;
+}
+
+.contacts-link {
+  color: #fff;
+  text-decoration: none;
+}
+
+.contacts-link:hover {
+  text-decoration: underline;
+}
+
+.contacts-item-mail {
+  background: #41B9D4 url(../img/mail.png) 37px 46% no-repeat;
+}
+
+.contacts-text {
+  padding: 7px 20px;
+  color: #FBFCFD;
+  font-family: "fira_sansbook";
+  font-size: 17px;
+  font-weight: 300;
+  margin-left: 50px;
+}
+
+.contacts-item-phone {
+  background: #48CBE8 url(../img/phone.png) 37px 46% no-repeat;
+}
+
+.contacts-item-skype {
+  background: #51DAF8 url(../img/skype.png) 37px 46% no-repeat;
+}
