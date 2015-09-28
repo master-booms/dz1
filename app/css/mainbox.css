@@ -1,7 +1,7 @@
 .mainbox {
   background: #eff3f7;
   margin-bottom: 25px;
-  padding-bottom: 35px;
+  padding-bottom: 25px;
 }
 
 .mainbox .mainbox-header {
@@ -9,12 +9,12 @@
   font-weight: normal;
   font-family: 'fira_sansbook';
   color: #3ba8c0;
-  padding-top: 20px;
+  padding: 11px;
   padding-left: 20px;
   margin-top: 0;
   margin-bottom: 27px;
   border-bottom: 2px solid #3ba8c0;
-  width: 321px;
+  width: 310px;
 }
 
 .mainbox .mainbox-header.education {
@@ -102,9 +102,9 @@
   font-family: "proxima_nova";
   font-size: 14px;
   font-weight: 600;
-  height: 19px;
+  height: 17px;
   text-align: center;
-  padding: 1px 12px;
+  padding: 2px 12px;
   margin-bottom: 3px;
   margin-left: 2px;
 }
@@ -114,7 +114,7 @@
   font-family: "fira_sansbook";
   font-size: 17px;
   font-weight: 300;
-  padding-left: 50px;
+  padding-left: 90px;
 }
 
 .mainbox-item .period {
@@ -122,21 +122,21 @@
   font-family: "fira_sanslight";
   font-size: 15px;
   font-weight: 300;
-  padding-left: 50px;
+  padding-left: 90px;
   margin-bottom: 15px;
 }
 
 .mainbox-item.icon-work {
-  background: url(../img/portf.png) no-repeat;
+  background: url(../img/portf.png) 3% 7% no-repeat;
   list-style: none;
 }
 
 .mainbox-item.icon-education {
-  background: url(../img/education1.png) 0% 25% no-repeat;
+  background: url(../img/education1.png) 1% 25% no-repeat;
   list-style: none;
 }
 
 .mainbox-item.icon-course {
-  background: url(../img/course.png) 1.3% 25% no-repeat;
+  background: url(../img/course.png) 2.4% 25% no-repeat;
   list-style: none;
 }

@@ -22,6 +22,7 @@ body {
   background: #eff3f7 url(../img/gradient.png) bottom center no-repeat;
   position: relative;
   margin-bottom: 39px;
+  min-width: 970px;
 }
 
 .header-c .header-logo-link {
@@ -65,6 +66,7 @@ body {
   text-indent: -9999px;
   height: 100%;
   width: 100%;
+  transition: linear 0.2s;
 }
 
 .social .socials-link.vk {
@@ -142,6 +144,7 @@ body {
 .lock .lock-inner:hover {
   text-decoration: underline;
   background: url(../img/zamok_open.png) no-repeat;
+  transition: 0.2s;
 }
 
 .container {
@@ -159,6 +162,10 @@ body {
 
 .right {
   float: right;
+}
+
+header, nav, section, article, aside, footer {
+  display: block;
 }
 
 .container:before, .clearfix:before,
@@ -185,6 +192,7 @@ body {
   border-radius: 5px;
   margin-bottom: 25px;
   overflow: hidden;
+  min-width: 248px;
 }
 
 .sidebar .nav-list {
@@ -224,7 +232,7 @@ body {
   color: #959aa8;
   text-decoration: none;
   display: block;
-  padding: 17px;
+  padding: 21px;
 }
 
 .nav-item .nav-link:hover {
