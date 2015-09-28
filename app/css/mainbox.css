@@ -1,3 +1,4 @@
+/*Avatar*/
 .mainbox {
   background: #eff3f7;
   margin-bottom: 25px;
@@ -48,6 +49,7 @@
   float: left;
 }
 
+/*Worksheet*/
 .worksheet-wrap {
   width: 400px;
   float: left;
@@ -95,18 +97,22 @@
   background-image: -o-linear-gradient(bottom, #2E8CA2 0%, #2E8CA2 52%, #3BA8C0 53%, #3BA8C0 100%);
   background-image: -webkit-linear-gradient(bottom, #2E8CA2 0%, #2E8CA2 52%, #3BA8C0 53%, #3BA8C0 100%);
   background-image: linear-gradient(to top, #2E8CA2 0%, #2E8CA2 52%, #3BA8C0 53%, #3BA8C0 100%);
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#2E8CA2', endColorstr='#3BA8C0')";
+  /* IE8 */
   -moz-border-radius: 2px;
   -webkit-border-radius: 2px;
+  -ms-border-radius:2px;
   border-radius: 2px;
   color: #fff;
-  font-family: "proxima_nova";
+  font-family: "proxima_novacondsemibold";
   font-size: 14px;
   font-weight: 600;
-  height: 17px;
   text-align: center;
   padding: 2px 12px;
   margin-bottom: 3px;
   margin-left: 2px;
+  line-height: 19px;
+  vertical-align: middle;
 }
 
 .mainbox-item .where {

@@ -9,6 +9,7 @@ body {
   color: #4a545d;
 }
 
+/*Header*/
 .container-big {
   min-width: 960px;
   max-width: 1200px;
@@ -42,6 +43,7 @@ body {
   left: -9999px;
 }
 
+/*Social*/
 .social {
   min-width: 246px;
   margin: 0;
@@ -107,46 +109,7 @@ body {
   margin-bottom: 89px;
 }
 
-.footer-c {
-  background: #eff3f7 url(../img/gradient.png) top center no-repeat;
-  color: #606972;
-  font-family: 'fira_sanslight';
-  height: 80px;
-  margin-top: -80px;
-  min-width: 970px;
-}
-
-.footer-c .container {
-  padding-top: 23px;
-  position: relative;
-}
-
-.footer-c .copyright {
-  margin: 0 180px;
-  padding-top: 7px;
-  text-align: center;
-  font-size: 13px;
-}
-
-.footer-c .lock {
-  position: absolute;
-  top: 26px;
-  left: 30px;
-}
-
-.lock .lock-inner {
-  background: url(../img/zamok.png) no-repeat;
-  display: block;
-  height: 40px;
-  text-indent: -9999px;
-}
-
-.lock .lock-inner:hover {
-  text-decoration: underline;
-  background: url(../img/zamok_open.png) no-repeat;
-  transition: 0.2s;
-}
-
+/*General*/
 .container {
   width: 960px;
   margin: 0 auto;
@@ -168,6 +131,7 @@ header, nav, section, article, aside, footer {
   display: block;
 }
 
+/*Clearfix*/
 .container:before, .clearfix:before,
 .container:after, .clearfix:after {
   content: " ";
@@ -178,9 +142,11 @@ header, nav, section, article, aside, footer {
   clear: both;
 }
 
+/*Sidebar left*/
 .sidebar {
   width: 248px;
   float: left;
+  /*Active menu*/
 }
 
 .sidebar .nav {
@@ -239,7 +205,8 @@ header, nav, section, article, aside, footer {
   color: #3ba8c0;
 }
 
-.contacts .contacts-list {
+/*Adress*/
+.contacts-list {
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   -ms-border-radius: 5px;
@@ -293,3 +260,48 @@ header, nav, section, article, aside, footer {
 .contacts-item-skype {
   background: #51DAF8 url(../img/skype.png) 37px 46% no-repeat;
 }
+
+/*Footer*/
+.footer-c {
+  background: #eff3f7 url(../img/gradient.png) top center no-repeat;
+  color: #606972;
+  font-family: 'fira_sanslight';
+  height: 80px;
+  margin-top: -80px;
+  min-width: 970px;
+}
+
+.footer-c .container {
+  padding-top: 23px;
+  position: relative;
+}
+
+.footer-c .copyright {
+  margin: 0 278px;
+  padding-top: 7px;
+  text-align: center;
+  font-size: 13px;
+  position: absolute;
+}
+
+/*Lock*/
+.footer-c .lock {
+  background: url(../img/zamok.png) no-repeat;
+  position: absolute;
+  top: 26px;
+  left: 30px;
+}
+
+.footer-c .lock:hover {
+  text-decoration: underline;
+  background: url(../img/zamok_open.png) no-repeat;
+  transition: 0.2s;
+}
+
+.lock .lock-inner {
+  display: block;
+  height: 40px;
+  text-indent: -9999px;
+}
+
+/*Lock & Footer end*/
