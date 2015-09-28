@@ -286,22 +286,22 @@ header, nav, section, article, aside, footer {
 
 /*Lock*/
 .footer-c .lock {
-  background: url(../img/zamok.png) no-repeat;
   position: absolute;
   top: 26px;
   left: 30px;
 }
 
-.footer-c .lock:hover {
-  text-decoration: underline;
-  background: url(../img/zamok_open.png) no-repeat;
-  transition: 0.2s;
-}
-
 .lock .lock-inner {
+  background: url(../img/zamok.png) no-repeat;
   display: block;
   height: 40px;
   text-indent: -9999px;
+}
+
+.lock .lock-inner:hover {
+  text-decoration: underline;
+  background: url(../img/zamok_open.png) no-repeat;
+  transition: 0.2s;
 }
 
 /*Lock & Footer end*/
