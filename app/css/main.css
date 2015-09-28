@@ -296,6 +296,7 @@ header, nav, section, article, aside, footer {
   display: block;
   height: 40px;
   text-indent: -9999px;
+  
 }
 
 .lock .lock-inner:hover {
