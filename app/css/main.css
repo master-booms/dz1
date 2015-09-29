@@ -146,9 +146,9 @@ header, nav, section, article, aside, footer {
 .sidebar {
   width: 248px;
   float: left;
-  /*Active menu*/
+  
 }
-
+/*Active menu*/
 .sidebar .nav {
   background: #eff3f7;
   -webkit-border-radius: 5px;

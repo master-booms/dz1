@@ -105,14 +105,14 @@
   border-radius: 2px;
   color: #fff;
   font-family: "proxima_novacondsemibold";
-  font-size: 14px;
-  font-weight: 600;
+  font-weight: normal;
+  font-size: 14px;  
   text-align: center;
-  padding: 2px 12px;
+  padding: 0px 12px 0 12px;
   margin-bottom: 3px;
   margin-left: 2px;
   line-height: 19px;
-  vertical-align: middle;
+  
 }
 
 .mainbox-item .where {
