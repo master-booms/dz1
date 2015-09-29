@@ -9,21 +9,29 @@
 		<meta name="keywords" content="site portfolio, cv, resume">
 		<meta name="author" content="Alexey Kulibov">
 		<!-- favicon -->
+		<link rel="icon" href="/favicon.ico" type="image/x-icon">
+        <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
 		<!-- font css -->
 		<link rel="stylesheet" href="css/fira/fira.css">
-		<link rel="stylesheet" href="css/Proxima-Nova/ProximaNova-Semibold.css">
+		<link rel="stylesheet" href="css/Proxima-Nova/proxima.css">
 		<!-- vendor CSS -->
 		<link rel="stylesheet" href="bower/normalize-css/normalize.css">
 		<!-- CSS -->
 		<link rel="stylesheet" href="css/main.css">
+		<link rel="stylesheet" href="css/mainbox.css">
 		<!-- JS -->
+		<!--[if IE]>
+       <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js">
+       </script>
+          <![endif]-->
 	 <!--<script src="/js/modernizr.js"></script>-->
 	</head>
 	<body>
-		<!--[if lt IE8]>
+		<!--[if lt IE 9]>
 		<p class="browsehappy">Ваш браузер <strong>устарел</strong>.
 		Пожалуйста<a href="http://browsehappy.com/">обновите</a> его.</p>
 		<![endif]-->
+
 		<!-- Моя верстка  -->
 		<div class="wrapper">
 		 <div class="main-container">
@@ -55,11 +63,11 @@
 				<aside class="sidebar">
 					<nav class="nav">
 						<ul class="nav-list">
-							<li class="nav-item ">
-								<a href="index.html" class="nav-link">Обо мне</a>
+							<li class="nav-item">
+								<a href="/index.html" class="nav-link">Обо мне</a>
 							</li>
 							<li class="nav-item current">
-								<a href="my_works.html" class="nav-link">Мои работы</a>
+								<a href="/my_works.html" class="nav-link ">Мои работы</a>
 							</li>
 							<li class="nav-item">
 								<a href="#" class="nav-link">Связаться со мной</a>
@@ -68,20 +76,20 @@
 					</nav>
 					<adress class="contacts">
 						<ul class="contacts-list">
-							<li class="contacts-item current">
-								<div class="contacts-text-current">Контакты</div>
+							<li class="contacts-item-head">
+								<div class="contacts-text-head">Контакты</div>
 							</li>
-							<li class="contacts-item">
+							<li class="contacts-item-mail">
 								<a href="mailto:forex1987@gmail.com" class="contacts-link">
 									<div class="contacts-text">forex1987@gmail.com</div>
 								</a>
 							</li>
-							<li class="contacts-item">
+							<li class="contacts-item-phone">
 								<a href="tel+380990344059" class="contacts-link">
 									<div class="contacts-text">+380990344059</div>
 								</a>
 							</li>
-							<li class="contacts-item">
+							<li class="contacts-item-skype">
 								<a href="skype:master-booms" class="contacts-link">
 									<div class="contacts-text">master-booms</div>
 								</a>
@@ -91,15 +99,16 @@
 				</aside>
 				<!-- Правая колонка -->
 				<div class="main-content">
-					<section class="mainbox">
+					<section class="mainbox clearfix">
 						<h2 class="mainbox-header">Основная информация</h2>
 						<div class="mainbox-body">
 							<div class="image-wrap">
 								<div class="avatar-box">
-									<img src="img/photo.jpg" alt="photo">
+									<img src="img/photo.jpg" alt="photo" class="avatar">
 								</div>
 							</div>
 						</div>
+						<div class="worksheet-wrap">
 						<ul class="worksheet-list">
 							<li class="worksheet-item clearfix">
 								<div class="worksheet-text">Меня зовут:</div>
@@ -129,37 +138,8 @@
 							</div>
 							</li>
 						</ul>
-					</section>
-					<section class="mainbox">
-						<h2 class="mainbox-header">Опыт работы</h2>
-							<div class="mainbox-body">
-								<ul class="mainbox-list">
-									<li class="mainbox-item icon-work">
-										<div class="where">ЗАО "Альфа-банк" - продавец банковских продуктов</div>
-										<div class="period">Август 2004 - Май 2005</div>
-									</li>
-									<li class="mainbox-item icon-work">
-										<div class="where">Фрилансер<div>
-										<div class="period">Июнь 2014 - Май 2015</div>
-									</li>
-								</ul>
-							</div>
-					</section>
-					<section class="mainbox">
-						<h2 class="mainbox-header">Образование</h2>
-							<div class="mainbox-body">
-								<ul class="mainbox-list">
-									<li class="mainbox-item icon-education">
-										<div class="where">Высшее. ХПИ</div>
-										<div class="period">Сентябрь 2004 - Август 2009</div>
-									</li>
-									<li class="mainbox-item icon-course">
-										<div class="where">Курсы Loftschool.ru</div>
-										<div class="period">Сентябрь 2015 - по настоящее время</div>
-									</li>
-								</ul>
-							</div>
-					</section>
+						</div>
+					</section>					 
 				</div>
 			</div>
         </div>
@@ -173,6 +153,7 @@
 				<div class="copyright">© 2015. Это мой сайт, пожалуйста, не копируйте и не воруйте его</div>
 			</div>
     	</footer>
+    	
 		<!-- JS-->
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 		<script>window.jQuery || document.write('<script src="bower/jquery/jquery.js"><\/script>')</script>

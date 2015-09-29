@@ -295,7 +295,9 @@ header, nav, section, article, aside, footer {
   background: url(../img/zamok.png) no-repeat;
   display: block;
   height: 40px;
-  text-indent: -9999px;
+  text-indent:100%;
+  white-space:nowrap;
+  overflow:hidden;
   
 }
 
