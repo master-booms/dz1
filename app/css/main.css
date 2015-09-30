@@ -106,10 +106,21 @@ body {
 .main-content {
   width: 650px;
   float: right;
-  margin-bottom: 89px;
+  margin-bottom: 40px;
 }
 
 /*General*/
+.wrapper{
+  position: relative;
+  min-height: 100%;
+  min-width: 970px;
+  height: auto!important;
+}
+.wrapper:after{
+  content:" ";
+  height: 80px;
+  display: block;
+}
 .container {
   width: 960px;
   margin: 0 auto;
@@ -146,7 +157,7 @@ header, nav, section, article, aside, footer {
 .sidebar {
   width: 248px;
   float: left;
-  
+
 }
 /*Active menu*/
 .sidebar .nav {
@@ -191,7 +202,12 @@ header, nav, section, article, aside, footer {
 .nav-item.current .nav-link:hover {
   color: #fbfcfd;
 }
-
+.nav-item.current .nav-link:active{
+  color:#fff;
+}
+.nav-item.current .nav-link:focus{
+  color:#cccccc;
+}
 .nav-item .nav-link {
   font-family: 'fira_sansbook';
   font-size: 20px;
@@ -204,7 +220,12 @@ header, nav, section, article, aside, footer {
 .nav-item .nav-link:hover {
   color: #3ba8c0;
 }
-
+.nav-item .nav-link:active{
+  color:#cccccc;
+ }
+.nav-item .nav-link:focus{
+  color:#cccccc;
+}
 /*Adress*/
 .contacts-list {
   -webkit-border-radius: 5px;
@@ -239,7 +260,12 @@ header, nav, section, article, aside, footer {
 .contacts-link:hover {
   text-decoration: underline;
 }
-
+.contacts-link:active {
+  color:#DAF3F7;
+}
+.contacts-link:focus {
+  cursor:pointer;
+}
 .contacts-item-mail {
   background: #41B9D4 url(../img/mail.png) 37px 46% no-repeat;
 }
@@ -269,6 +295,7 @@ header, nav, section, article, aside, footer {
   height: 80px;
   margin-top: -80px;
   min-width: 970px;
+  position: relative;
 }
 
 .footer-c .container {
@@ -298,7 +325,7 @@ header, nav, section, article, aside, footer {
   text-indent:100%;
   white-space:nowrap;
   overflow:hidden;
-  
+
 }
 
 .lock .lock-inner:hover {

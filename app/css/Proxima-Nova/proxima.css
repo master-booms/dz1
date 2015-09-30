@@ -1,9 +1,0 @@
-@font-face {
-    font-family: 'font-family: 'proxima_novacondsemibold';
-    src: url('ProximaNovaCond-Semibold.otf');
-    src: url('ProximaNovaCond-Semibold.otf.eot?#iefix') format('embedded-opentype'),
-         url('ProximaNovaCond-Semibold.otf.woff') format('woff'),
-         url('ProximaNovaCond-Semibold.otf.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
