@@ -1,8 +1,5 @@
 Инструкция по установке моего интернет-проекта
 
-
-1.git clone https://github.com/master-booms/dz1
-
 1.git clone https://github.com/master-booms/dz1
 
 2.cd site
