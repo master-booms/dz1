@@ -1,35 +1,66 @@
-.mainbox-body {
-  width: 640px;
-  margin: 0 -7px;
+.gallery-wrapper {
+  margin-left: 21.5px;
 }
 
-.gallery-list {
+.gallery-wrapper .gallery-list {
+  padding: 0;
+  margin: 0 0 0 -26px;
   list-style: none;
 }
 
-.gallery-list .gallery-item {
-  float: left;
-  min-width: 33.33%;
-  height: 100%;
-  margin-bottom: 10px;
+.gallery-item {
+  width: 183px;
+  min-height: 129px;
+  display: inline-block;
+  vertical-align: top;
+  text-align: center;
+  position: relative;
+  margin-bottom: 23px;
+  margin-left: 25px;
 }
 
-.gallery-text {
-  width: 170px;
+.gallery-item.addproject {
+  border: 1px dashed #3ba8c0;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  border-radius: 4px;
 }
 
-.second-portfolio {
-  list-style: none;
+.gallery-item .gallery-image {
+  border: 2px solid #72bfd0;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  border-radius: 4px;
 }
 
-.second-portfolio .gallery-item {
-  float: left;
-  min-width: 33.33%;
-  height: 100%;
-  margin-bottom: 10px;
+.gallery-item .gallery-image.addproject {
+  height: 32px;
+  width: 32px;
+  margin-top: 34px;
 }
 
-.gallery-image {
-  border: 2px solid #73c0d1;
-  border-radius: 10px;
+.gallery-item .gallery-link {
+  text-decoration: none;
+}
+
+.gallery-item .gallery-title {
+  color: #47adc4;
+  font-family: "fira_sanslight_italic";
+  font-size: 13px;
+  line-height: 10px;
+  padding: 0;
+  margin: 0;
+  font-family: "fira_sanslight";
+  vertical-align: middle;
+}
+
+.gallery-item .gallery-text {
+  color: #606972;
+  font-family: "fira_sanslight";
+  font-size: 15px;
+  line-height: 20px;
 }
