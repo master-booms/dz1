@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru=RU">
+<html lang="ru-RU">
 	<head>
 		<meta charset="UTF-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -13,12 +13,13 @@
         <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
 		<!-- font css -->
 		<link rel="stylesheet" href="css/fira/fira.css">
-		<link rel="stylesheet" href="css/Proxima-Nova/proxima.css">
+		<link rel="stylesheet" href="css/proxima_nova/proxima.css">
 		<!-- vendor CSS -->
 		<link rel="stylesheet" href="bower/normalize-css/normalize.css">
 		<!-- CSS -->
 		<link rel="stylesheet" href="css/main.css">
 		<link rel="stylesheet" href="css/mainbox.css">
+		<link rel="stylesheet" href="css/myworks.css">
 		<!-- JS -->
 		<!--[if IE]>
        <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js">
@@ -64,17 +65,17 @@
 					<nav class="nav">
 						<ul class="nav-list">
 							<li class="nav-item">
-								<a href="/index.html" class="nav-link">Обо мне</a>
+								<a href="index.html" class="nav-link">Обо мне</a>
 							</li>
 							<li class="nav-item current">
-								<a href="/my_works.html" class="nav-link ">Мои работы</a>
+								<a href="my_works.html" class="nav-link">Мои работы</a>
 							</li>
 							<li class="nav-item">
 								<a href="#" class="nav-link">Связаться со мной</a>
 							</li>
 						</ul>
 					</nav>
-					<adress class="contacts">
+					<div class="contacts">
 						<ul class="contacts-list">
 							<li class="contacts-item-head">
 								<div class="contacts-text-head">Контакты</div>
@@ -85,7 +86,7 @@
 								</a>
 							</li>
 							<li class="contacts-item-phone">
-								<a href="tel+380990344059" class="contacts-link">
+								<a href="tel:+380990344059" class="contacts-link">
 									<div class="contacts-text">+380990344059</div>
 								</a>
 							</li>
@@ -95,21 +96,69 @@
 								</a>
 							</li>
 						</ul>
-					</adress>
+					</div>
 				</aside>
 				<!-- Правая колонка -->
 				<div class="main-content">
 					<section class="mainbox clearfix">
 						<h2 class="mainbox-header">Мои работы</h2>
-						<div class="mainbox-body">
-						Lorem ipsum dolor sit amet, consectetur 		</div>
+						<div class="mainbox-body clearfix">
+							<ul class="gallery-list">
+								<li class="gallery-item">
+									<a href="#" class="gallery-link">
+										<img src="img/gallery/portfolio.png" alt="portfolio" class="gallery-image">										
+										<h3 class="gallery-title">www.site.ru</h3>
+										<p class="gallery-text">Информация о проекте
+										</p>
+
+									</a>
+								</li>
+								<li class="gallery-item">
+									<a href="#" class="gallery-link">
+									    
+										<img src="img/gallery/portfolio.png" alt="portfolio" class="gallery-image">
+										
+										<h3 class="gallery-title">www.site.ru12</h3>
+										<p class="gallery-text">Информация о проекте
+									</p>										
+									</a>
+								</li>
+								<li class="gallery-item">
+									<a href="#" class="gallery-link">
+										<img src="img/gallery/portfolio.png" alt="portfolio" class="gallery-image">
+										<h3 class="gallery-title">www.site.ru</h3>
+										<p class="gallery-text">Информация о проекте
+										</p>
+									</a>
+								</li>
+							</ul>
+							 <ul class="second-portfolio">
+								<li class="gallery-item">
+									<a href="#" class="gallery-link">
+										<img src="img/gallery/portfolio.png" alt="portfolio" class="gallery-image">
+										<h3 class="gallery-title">www.site.ru</h3>
+										<p class="gallery-text">Информация о проекте
+										</p>
+									</a>
+								</li>
+								<li class="gallery-item">
+									<a href="#" class="gallery-link">
+										<img src="img/gallery/portfolio.png" alt="portfolio" class="gallery-image">
+										<h3 class="gallery-title">www.site.ru</h3>
+										<p class="gallery-text">Информация о проекте</p>
+									</a>
+								</li>
+
+							</ul>
+                         
+						</div>					
 					</section>
 				</div>
 			</div>
         </div>
 		</div>
-
-		<footer class="footer-c clearfix">
+		</div>
+		<footer class="footer-c">
 			<div class="container">
 				<div class="lock">
 					<a href="/login.html" class="lock-inner"> Войти</a>

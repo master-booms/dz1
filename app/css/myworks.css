@@ -1,0 +1,35 @@
+.mainbox-body {
+  width: 640px;
+  margin: 0 -7px;
+}
+
+.gallery-list {
+  list-style: none;
+}
+
+.gallery-list .gallery-item {
+  float: left;
+  min-width: 33.33%;
+  height: 100%;
+  margin-bottom: 10px;
+}
+
+.gallery-text {
+  width: 170px;
+}
+
+.second-portfolio {
+  list-style: none;
+}
+
+.second-portfolio .gallery-item {
+  float: left;
+  min-width: 33.33%;
+  height: 100%;
+  margin-bottom: 10px;
+}
+
+.gallery-image {
+  border: 2px solid #73c0d1;
+  border-radius: 10px;
+}
