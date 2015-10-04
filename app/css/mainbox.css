@@ -15,16 +15,10 @@
   margin-top: 0;
   margin-bottom: 30px;
   border-bottom: 2px solid #3ba8c0;
-  width: 310px;
+  display: inline-block;
 }
 
-.mainbox .mainbox-header.education {
-  width: 194px;
-}
 
-.mainbox .mainbox-header.work {
-  width: 189px;
-}
 
 .avatar-box {
   -webkit-border-radius: 50%  50%;

@@ -1,0 +1,104 @@
+
+
+.fixed-overlay {
+    position: fixed;
+    overflow: auto;
+    left: 0;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+
+    
+}
+.modal {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    margin-bottom: 173px;
+    margin-top: 53px;
+}
+
+.modal_container {
+    padding:0 0 20px 0px;    
+    background: #eff3f7;
+    width: 592px;    
+    -moz-box-shadow: 0 4px 6.9px 0.1px rgba(13, 16, 7, 0.29);
+    -webkit-box-shadow: 0 4px 6.9px 0.1px rgba(13, 16, 7, 0.29);
+    box-shadow: 0 4px 6.9px 0.1px rgba(13, 16, 7, 0.29);
+   
+}
+ 
+ 
+.login-header{
+  text-align: center;
+  font-family: 'fira_sansbook';
+  font-size: 40px;
+  background: #48cbe8;  
+  padding: 0;
+  margin: 0 0 20px 0;
+  height: 90px;
+  line-height: 91px;
+  border-bottom: 17px solid #67dffa;
+  color: #fff;
+}
+
+
+.login-text{
+  display: block;
+  text-align: center;
+  font-family: 'fira_sanslight';
+  font-size: 36px;
+  color: #959aa8;
+  margin-bottom: 20px;
+
+
+}
+.input-wrap{
+  text-align: center;
+  display: block;
+}
+.input-login{
+  padding-left: 10px;
+  min-width: 422px;
+  min-height: 60px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  border-radius: 4px;
+  border: 1px solid #4dcce8;
+  margin-bottom: 20px;
+ 
+  
+}
+}
+.input-login::-webkit-input-placeholder       {text-indent: 0px; color:#4dcce8;   transition: text-indent 0.3s ease;}
+.input-login::-moz-placeholder                {text-indent: 0px; color:#4dcce8;   transition: text-indent 0.3s ease;}
+.input-login:-ms-input-placeholder            {text-indent: 0px; color:#4dcce8;   transition: text-indent 0.3s ease;}
+.input-login:focus::-webkit-input-placeholder {text-indent: 500px;  transition: text-indent 0.3s ease;}
+.input-login:focus::-moz-placeholder          {text-indent: 500px; transition: text-indent 0.3s ease;}
+.input-login:focus:-ms-input-placeholder      {text-indent: 500px; transition: text-indent 0.3s ease;}
+.input-login:focus{
+    box-shadow: #4dcce8 0 0 0 2px;
+    border-radius: 4px;
+    border-color: #4dcce8;
+}
+.button-wrap{
+  text-align: center;
+  display: block;
+}
+.button.login-enter {
+  min-width: 222px;
+  background-color: #48CBE8;
+  font-size: 36px;
+  font-family: 'fira_sanslight';
+  border-bottom: 2px solid #3ba8c0;
+}  
+.login_form{
+  padding: 0px;
+  margin: 0;
+
+ 
+}

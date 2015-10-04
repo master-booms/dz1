@@ -1,25 +1,24 @@
 .gallery-wrapper {
-  margin-left: 21.5px;
+  width: 100%;
 }
 
 .gallery-wrapper .gallery-list {
   padding: 0;
-  margin: 0 0 0 -26px;
   list-style: none;
+  margin: 0;
+  font-size: 0;
 }
 
 .gallery-item {
-  width: 183px;
+  width: 33.33%;
   min-height: 129px;
   display: inline-block;
   vertical-align: top;
   text-align: center;
-  position: relative;
   margin-bottom: 23px;
-  margin-left: 25px;
 }
 
-.gallery-item.addproject {
+.add_project {
   border: 1px dashed #3ba8c0;
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
@@ -27,6 +26,26 @@
   -o-border-radius: 4px;
   border-radius: 4px;
   background: #edf8fc;
+  display: inline-block;
+  vertical-align: top;
+  text-align: center;
+  margin-bottom: 23px;
+  margin-left: 10px;
+}
+
+.add_project .add_project-link {
+  text-decoration: none;
+  display: block;
+  background: url(../img/gallery/addproject.png) center no-repeat;
+  padding: 2px 43px;
+}
+
+.add_project .add_project-title {
+  font-size: 13px;
+  font-family: "fira_sanslight";
+  color: #828d91;
+  padding: 0;
+  margin-top: 90px;
 }
 
 .gallery-item .gallery-image {
@@ -36,12 +55,8 @@
   -ms-border-radius: 4px;
   -o-border-radius: 4px;
   border-radius: 4px;
-}
-
-.gallery-item .gallery-image.addproject {
-  height: 32px;
-  width: 32px;
-  margin-top: 34px;
+  text-align: center;
+  margin-bottom: 10px;
 }
 
 .gallery-item .gallery-link {
