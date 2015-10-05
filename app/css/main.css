@@ -323,7 +323,7 @@ header, nav, section, article, aside, footer {
 
 .lock .lock-inner {
   background: url(../img/lock.png) no-repeat;
-  background-position: -15px -10px;
+  background-position: -15px -10px ;    
   display: block;
   height: 40px;
   text-indent:100%;
@@ -334,8 +334,8 @@ header, nav, section, article, aside, footer {
 
 .lock .lock-inner:hover {
   text-decoration: underline;
+  background-position: -15px -56px ;
   
-  background-position: -15px -56px;
-  
+}
 
 /*Lock & Footer end*/
