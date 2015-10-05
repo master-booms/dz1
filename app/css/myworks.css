@@ -11,10 +11,13 @@
 
 .gallery-item {
   width: 33.33%;
-  min-height: 129px;
+  height: 100%;
   display: inline-block;
   vertical-align: top;
   text-align: center;
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
   margin-bottom: 23px;
 }
 
@@ -57,6 +60,8 @@
   border-radius: 4px;
   text-align: center;
   margin-bottom: 10px;
+  min-width: 33.33%;
+  max-height: 100%;
 }
 
 .gallery-item .gallery-link {
@@ -80,3 +85,44 @@
   font-size: 15px;
   line-height: 20px;
 }
+
+.descr
+{
+    font-size: 15px;
+    line-height: 126px;
+
+    position: absolute;
+    top: 0;
+    
+    left: 16px;
+    width: 85%;
+    height: 131px;
+
+    -webkit-transition: all .5s;
+         -o-transition: all .5s;
+            transition: all .5s;
+    -webkit-transform: scale(0) rotate(90deg);
+        -ms-transform: scale(0) rotate(90deg);
+         -o-transform: scale(0) rotate(90deg);
+            transform: scale(0) rotate(90deg);
+    text-align: center;
+
+    opacity: 0;
+    color: #fff;
+    background-color: rgba(0,0,0,.5);
+    display: inline-block;
+    background-color: rgba(1, 108, 164, 0.75);
+    
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+}
+.gallery-item:hover .descr{
+    top: 0;
+    opacity: 1;
+    -webkit-transform: scale(1) rotate(0deg);
+    -ms-transform: scale(1) rotate(0deg);
+    -o-transform: scale(1) rotate(0deg);
+    transform: scale(1) rotate(0deg);
+}
+    
