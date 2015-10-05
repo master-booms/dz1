@@ -322,7 +322,8 @@ header, nav, section, article, aside, footer {
 }
 
 .lock .lock-inner {
-  background: url(../img/zamok.png) no-repeat;
+  background: url(../img/lock.png) no-repeat;
+  background-position: -15px -10px;
   display: block;
   height: 40px;
   text-indent:100%;
@@ -333,8 +334,8 @@ header, nav, section, article, aside, footer {
 
 .lock .lock-inner:hover {
   text-decoration: underline;
-  background: url(../img/zamok_open.png) no-repeat;
-  transition: 0.2s;
-}
+  
+  background-position: -15px -56px;
+  
 
 /*Lock & Footer end*/
