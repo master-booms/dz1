@@ -80,27 +80,27 @@ body {
 }
 
 .social .socials-link.tw {
-  background-position: -52px 0;
+  background-position: -50px 0
 }
 
 .social .socials-link.tw:hover {
-  background-position: -51px -51px;
+  background-position: -50px -50px ;
 }
 
 .social .socials-link.fb {
-  background-position: -101px -1px;
+  background-position: -101px -0px;
 }
 
 .social .socials-link.fb:hover {
-  background-position: -101px -51px;
+  background-position: -101px -50px;
 }
 
 .social .socials-link.git {
-  background-position: -151px -1px;
+  background-position: -150px 0px;
 }
 
 .social .socials-link.git:hover {
-  background-position: -151px -52px;
+  background-position: -150px -50px;
 }
 
 .main-content {
