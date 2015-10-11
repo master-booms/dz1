@@ -1,35 +1,31 @@
 
-
+/*my cross-browser solution modal begin*/
 .fixed-overlay {
     position: fixed;
-    overflow: auto;
-    left: 0;
-    top: 0;
-    right: 0;
-    width: 100%;
-    height: 100%;
+    left: 50%;
+    top: 50%;
 
     
 }
+
 .modal {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    margin-bottom: 173px;
-    margin-top: 53px;
+    margin: -346px 0 0 -300px;
+    min-height: 500px;
 }
 
 .modal_container {
-    padding:0 0 20px 0px;    
-    background: #eff3f7;
-    width: 592px;    
+    margin: 50px;
+    min-width: 592px;
+    text-align: left;
+    white-space: normal; 
+    background: #eff3f7;    
+    min-height: 485px;    
     -moz-box-shadow: 0 4px 6.9px 0.1px rgba(13, 16, 7, 0.29);
     -webkit-box-shadow: 0 4px 6.9px 0.1px rgba(13, 16, 7, 0.29);
     box-shadow: 0 4px 6.9px 0.1px rgba(13, 16, 7, 0.29);
    
 }
- 
+/* my cross-browser modal solution fin*/
  
 .login-header{
   text-align: center;
@@ -51,7 +47,7 @@
   font-family: 'fira_sanslight';
   font-size: 36px;
   color: #959aa8;
-  margin-bottom: 20px;
+  
 
 
 }

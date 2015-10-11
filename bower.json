@@ -1,6 +1,7 @@
 {
   "name": "dz1",
   "dependencies": {
+    "bPopup": "bpopup#~0.11.0",
     "jquery": "1.8",
     "normalize-css": "normalize.css#~3.0.3"
   }

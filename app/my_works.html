@@ -20,6 +20,7 @@
 		<link rel="stylesheet" href="css/main.css">
 		<link rel="stylesheet" href="css/mainbox.css">
 		<link rel="stylesheet" href="css/myworks.css">
+		<link rel="stylesheet" href="css/popup.css">
 		<!-- JS -->
 		<!--[if IE]>
        <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js">
@@ -142,8 +143,8 @@
 										</p>
 									</a>
 								</li>
-								<li class="add_project">
-									<a href="#" class="add_project-link">
+								<li  class="add_project" >
+									<a href="#" class="add_project-link" id="add-new-item" >
 										
 										<p class="add_project-title ">Добавить проект</p>
 										
@@ -153,6 +154,7 @@
 						</div>					
 					</section>
 				</div>
+				
 			</div>
         </div>
 		</div>
@@ -166,11 +168,49 @@
 				<div class="copyright">© 2015. Это мой сайт, пожалуйста, не копируйте и не воруйте его</div>
 			</div>
     	</footer>
+    	<!-- Попап начало -->
+				<div class="popup" id="new-progect-popup">
+					<div class="wrap-descr-popup">
+						<h2 class="descr-popup">Добавление проекта<a class="close-popup b-close" href="#">закрыть</a></h2>
+					</div>
+					<form action method="post" id="add-new-progect" class="form-popup" >
+					<div class="error-mess">
+						<div class="descr-error">Ошибка!
+							<span class="descr-error-span">Невозможно добавить проект.</span>
+						</div>
+					</div>
+					<div class="success-mess">
+						<div class="descr-success">Ура! <span class="descr-success-span">Проект успешно добавлен.</span></div>
+					</div>
+
+						<label class="label-popup">
+						    <span class="login-text-popup">Название проекта</span>
+							<input  type="text" name="projectName" class="input-popup"  placeholder="Введите название">
+						</label>
+						<label class="label-popup file">
+						    <span class="login-text-popup">Картинка проекта</span>
+						    <span class="upload-file"><span class="text-upload">Загрузите изображение</span></span>
+							<input  type="file" name="onload_picture" class="input-popup add_file" placeholder="Загрузите изображение">
+						</label>
+						<label class="label-popup">
+						    <span class="login-text-popup">URL проекта</span>
+							<input type="text" name="add_url" class="input-popup " placeholder="Добавьте ссылку">
+						</label>
+						<label class="label-popup">
+						    <span class="login-text-popup">Описание</span>
+							<textarea class="textarea-popup" name="description" placeholder="Пара слов о Вашем проекте"></textarea> 
+						</label>
+						<button type="submit" class="button add">Добавить</button>
+					</form>
+				</div>				
+				<!-- Попап конец -->
 
 		<!-- JS-->
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 		<script>window.jQuery || document.write('<script src="bower/jquery/jquery.js"><\/script>')</script>
+		<script src="bower/bPopup/jquery.bpopup.js"></script>
 		<script src="js/main.js"></script>
+		<script src="js/popup.js"></script>
 	</body>
 </html>
 
