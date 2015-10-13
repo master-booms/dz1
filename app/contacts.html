@@ -16,6 +16,7 @@
 		<link rel="stylesheet" href="css/proxima_nova/proxima.css">
 		<!-- vendor CSS -->
 		<link rel="stylesheet" href="bower/normalize-css/normalize.css">
+		<link rel="stylesheet" href="bower/qtip2/jquery.qtip.css">
 		<!-- CSS -->
 		<link rel="stylesheet" href="css/main.css">
 		<link rel="stylesheet" href="css/mainbox.css">
@@ -103,23 +104,24 @@
 				<div class="main-content">
 					<section class="mainbox clearfix">
 						<h2 class="contacts-header">У Вас интересный проект? Напишите мне</h2>
-						<form action class="contacts_form clearfix">
+						<form action id="contact-me" class="contacts_form clearfix">
 							<label class="label_name">
 								<span class="name_descr">Имя</span>
-								<input type="text" class="input_name" placeholder="Как к Вам обращаться">
+								<input type="text" class="input_name" placeholder="Как к Вам обращаться" qtip-content="Введите имя" qtip-position='left'>
 							</label>
 							<label class="label_name">
 								<span class="name_descr">Email</span>
-								<input type="text" class="input_name" placeholder="Куда мне писать">
+								<input type="text" class="input_name" placeholder="Куда мне писать" qtip-content="
+								Введите почту" qtip-position='right'>
 							</label>
 							<label class="label_name">
 								<span class="name_descr">Сообщение</span>
-								<textarea class="textarea" placeholder="Кратко в чем суть"></textarea> 
+								<textarea class="textarea" placeholder="Кратко в чем суть" qtip-content="Напишите в чем суть Вашего вопроса" qtip-position='left'></textarea> 
 							</label>
 							<label class="label_name captcha">
 							    <span class="name_descr">Введите код, указанный на картинке</span>
 							    <span class="captcha_img">captcha</span>
-								<input type="text" class="input_name captcha" placeholder="Введите код">
+								<input type="text" class="input_name captcha" placeholder="Введите код" qtip-content='Введите код который Вы видите на картинке'qtip-position='right'>
 
 							</label>
                              <button type="submit" class="button send">Отправить</button>
@@ -143,7 +145,11 @@
 		<!-- JS-->
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 		<script>window.jQuery || document.write('<script src="bower/jquery/jquery.js"><\/script>')</script>
+		<script src='bower/qtip2/jquery.qtip.js'></script>
 		<script src="js/main.js"></script>
+		<script src="js/validation.js"></script>
+		<script src="js/contactme.js"></script>
+		
 	</body>
 </html>
 

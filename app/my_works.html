@@ -16,11 +16,14 @@
 		<link rel="stylesheet" href="css/proxima_nova/proxima.css">
 		<!-- vendor CSS -->
 		<link rel="stylesheet" href="bower/normalize-css/normalize.css">
+		<link rel="stylesheet" href="bower/qtip2/jquery.qtip.css">
 		<!-- CSS -->
 		<link rel="stylesheet" href="css/main.css">
 		<link rel="stylesheet" href="css/mainbox.css">
 		<link rel="stylesheet" href="css/myworks.css">
 		<link rel="stylesheet" href="css/popup.css">
+		<link rel="stylesheet" href="css/contacts.css">
+
 		<!-- JS -->
 		<!--[if IE]>
        <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js">
@@ -185,20 +188,20 @@
 
 						<label class="label-popup">
 						    <span class="login-text-popup">Название проекта</span>
-							<input  type="text" name="projectName" class="input-popup"  placeholder="Введите название">
+							<input  type="text" name="projectName" class="input-popup"  placeholder="Введите название"  qtip-content="Введите имя" qtip-position='left'>
 						</label>
 						<label class="label-popup file">
 						    <span class="login-text-popup">Картинка проекта</span>
-						    <span class="upload-file"><span class="text-upload">Загрузите изображение</span></span>
-							<input  type="file" name="onload_picture" class="input-popup add_file" placeholder="Загрузите изображение">
+						    <span class="upload-file"  qtip-content="Загрузите изображение" qtip-position='left' >Загрузите изображение<span class="text-upload"></span></span>
+							<input  type="file" name="onload_picture" class="input-popup add_file" >
 						</label>
 						<label class="label-popup">
 						    <span class="login-text-popup">URL проекта</span>
-							<input type="text" name="add_url" class="input-popup " placeholder="Добавьте ссылку">
+							<input type="text" name="add_url" class="input-popup " placeholder="Добавьте ссылку"  qtip-content="Введите URL" qtip-position='left'>
 						</label>
 						<label class="label-popup">
 						    <span class="login-text-popup">Описание</span>
-							<textarea class="textarea-popup" name="description" placeholder="Пара слов о Вашем проекте"></textarea> 
+							<textarea class="textarea-popup" name="description" placeholder="Пара слов о Вашем проекте"  qtip-content="Опишите ваш проект" qtip-position='left'></textarea> 
 						</label>
 						<button type="submit" class="button add">Добавить</button>
 					</form>
@@ -209,8 +212,10 @@
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 		<script>window.jQuery || document.write('<script src="bower/jquery/jquery.js"><\/script>')</script>
 		<script src="bower/bPopup/jquery.bpopup.js"></script>
+		<script src='bower/qtip2/jquery.qtip.js'></script>
 		<script src="js/main.js"></script>
 		<script src="js/popup.js"></script>
+		<script src="js/validation.js"></script>
 	</body>
 </html>
 

@@ -4,16 +4,17 @@
   font-family: 'fira_sansbook';
   font-size: 27px;
   background: #48cbe8;
-  margin: 0 0 23px 0;
+  margin: 0 0 37px 0;
   padding: 0;
+  padding-right: 10px;
   height: 123px;
   line-height: 124px;
   border-bottom: 17px solid #67dffa;
 }
 
 .contacts_form {
-  width: 400px;
-  margin: 0 auto;
+  width: 409px;
+  margin: 0 120px;
 }
 
 .name_descr {
@@ -39,19 +40,20 @@
 
 .label_name {
   display: inline-block;
+  padding-left: 8px;
 }
 
 .textarea {
-  width: 377px;
-  height: 180px;
+  width: 388px;
+  height: 166px;
   resize: none;
-  padding-left: 10px;
-  padding-top: 10px;
+  padding-left: 6px;
+  padding-top: 5px;
   border: 1px solid #4dcce8;
   border-radius: 4px;
   font-size: 13px;
   font-family: 'fira_sanslight';
-  margin-bottom: 20px;
+  
 }
 .input_name::-webkit-input-placeholder       {text-indent: 0px; color:#4dcce8;   transition: text-indent 0.3s ease;}
 .input_name::-moz-placeholder                {text-indent: 0px; color:#4dcce8;   transition: text-indent 0.3s ease;}
@@ -74,8 +76,8 @@
 ::-moz-placeholder                { color:#4dcce8;  } 
 :-ms-input-placeholder            { color:#4dcce8;  }
 .label_name.captcha {
-  width: 392px;
-  margin-bottom: 30px;
+  width: 399px;
+  margin-bottom: 22px;
 }
 
 .input_name.captcha {
@@ -123,6 +125,7 @@
   background-color: #48CBE8;
   float: left;
   border-bottom: 2px solid #3ba8c0;
+  margin-left: 8px;
 
 }
 .button.send:hover{
@@ -134,14 +137,21 @@
 }
 
 .button.clear {
-  width: 120px;
-  margin: 0 9px;
+  width: 120px;  
   float: right;
   background-color: #849db5;
   border-bottom: 2px solid #687b8f;
+  margin-right: 4px;
 }
 .button.clear:hover{
 	color: #ccc;
     -moz-border-radius: 5px;
   -webkit-border-radius: 5px;
   border-radius: 5px;
+}
+.has-error{
+  background: #fdd5d2;
+  border:1px solid #f97e76!important;
+
+ 
+}

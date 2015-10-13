@@ -1,8 +1,7 @@
 .popup{
 	display: none;
 	position: relative;
-    width: 362px;
-    padding-bottom: 10px;
+    width: 362px;   
     text-align: center;
     white-space: normal; 
     background: #eff3f7;        
@@ -62,11 +61,12 @@
   	color: #c0392b;
 }
 .input-popup.add_file{		
-  display:none;
+  display: none;
+
 		
 }
 .upload-file {
-    width: 320px;
+    width: 310px;
     height: 40px;
     border: 1px solid #48cbe8;
     -webkit-border-radius: 5px;
@@ -74,19 +74,23 @@
     border-radius: 5px;
     display: block;  
     cursor: pointer;
-    background: #fff url(../img/add_file/add_file_popup.png) no-repeat right;
+    background: #fff;
+    text-align: left;
+    color: #48cbe8;
+    font-size: 13px;
+    line-height: 41px;
+    padding-left: 10px;
+    
 }
 .text-upload{
-    display:block;
-    width: 260px;
-    height: 40px;
-    line-height: 41px;
-    cursor: default;
-    text-align: left;
-    font-size: 13px;
-    font-family: 'fira_sanslight';
-    color: #4dcce8;
-    padding-left: 10px;
+   height: 40px;
+   width: 50px;
+    background: #fff url(../img/add_file/add_file_popup.png) no-repeat;
+    position: absolute;
+    right:20px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
 
 }
 .textarea-popup{
@@ -136,6 +140,7 @@
   padding: 2px 20px;
   background-color: #48CBE8;  
   border-bottom: 2px solid #3ba8c0;
+  margin-bottom: 10px;
 }
 .button.add:hover{
   color:#ccc;

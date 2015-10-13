@@ -18,10 +18,12 @@ var myModule = (function(){
 	    	form = divPopup.find('.form-popup');
 	    divPopup.bPopup({
 	    	speed:650,
-	    	transition:'slideDown',
+	    	transition:'slideIn',
+	    	
 	    	onClose: function () {
 	    		form.find('.error-mess').hide();
 	    		form.find('.success-mess').hide();
+	    		form.trigger('reset');
 	    	}
 	    });				
 	};
@@ -34,15 +36,11 @@ var myModule = (function(){
 		// обьявляем переменные
 		var form = $(this),
 			url = 'add_progect.php',
-			myServerGiveMeAnAnswer = _ajaxForm(form, url);
+			defObj = _ajaxForm(form, url);
 
-			
-
-			console.log(data);
-		
-		// запрос на сервер
-		
-		myServerGiveMeAnAnswer.done(function(ans) {
+		//проверка запроса на сервер	
+		if (defObj) {			
+		defObj.done(function(ans) {
 			console.log(ans);
 			var successBox = form.find('.success-mess'),
 				errorBox = form.find('.error-mess');
@@ -58,8 +56,8 @@ var myModule = (function(){
 		})
 		.fail(function() {
 			console.log("error");
-		})
-			
+		});
+		}	
 	};
 	// Универсальная функция
 		// Для ее работы используются 
@@ -71,9 +69,7 @@ var myModule = (function(){
 		//3.Возвращает ответ с сервера	
 	var _ajaxForm = function (form, url) {
 
-		
-
-		// if(!valid) return false;
+		if (!validation.validateForm(form)) return false;
 
 		data = form.serialize();
 

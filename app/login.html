@@ -16,6 +16,7 @@
 		<link rel="stylesheet" href="css/proxima_nova/proxima.css">
 		<!-- vendor CSS -->
 		<link rel="stylesheet" href="bower/normalize-css/normalize.css">
+		<link rel="stylesheet" href="bower/qtip2/jquery.qtip.css">
 		<!-- CSS -->
 		<link rel="stylesheet" href="css/main.css">
 		<link rel="stylesheet" href="css/mainbox.css">
@@ -40,22 +41,22 @@
 		<div class="fixed-overlay">
          	<div class="modal">
         	<div class="modal_container">
-			<form action class="login-form">
+			<form action method="POST" id="contact-me" class="login-form">
 			<h2 class="login-header">Авторизируйтесь</h2>
 				<label for="" class="label-login-form">
 					<span class="login-text">Логин</span>
 					    <span class="input-wrap">
-					 		<input type="text" class="input-login" placeholder="Введите логин">
+					 		<input type="text" class="input-login" placeholder="Введите логин" qtip-content="Введите логин" qtip-position='left'>
 					 </span>
 				</label>
 				<label  class="label-login-form">
 					<span class="login-text" >Пароль</span>
 					<span class="input-wrap">
-						<input type="text" class="input-login" placeholder="Введите пароль">
+						<input type="text" class="input-login" placeholder="Введите пароль" qtip-content="Введите пароль" qtip-position='left'>
 					</span>	
 				</label>
 				<div class="button-wrap">
-				<button class="button login-enter">Войти</button></div>
+				<button type="submit" class="button login-enter">Войти</button></div>
 			</form>    
        			 </div>
     		</div>
@@ -69,7 +70,12 @@
 		<!-- JS-->
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 		<script>window.jQuery || document.write('<script src="bower/jquery/jquery.js"><\/script>')</script>
+		<script src='bower/qtip2/jquery.qtip.js'></script>
 		<script src="js/main.js"></script>
+		<script src="js/popup.js"></script>
+		<script src="js/validation.js"></script>
+		<script src="js/contactme.js"></script>
+
 	</body>
 </html>
 
