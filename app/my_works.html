@@ -190,10 +190,12 @@
 						    <span class="login-text-popup">Название проекта</span>
 							<input  type="text" name="projectName" class="input-popup"  placeholder="Введите название"  qtip-content="Введите имя" qtip-position='left'>
 						</label>
-						<label class="label-popup file">
-						    <span class="login-text-popup">Картинка проекта</span>
-						    <span class="upload-file"  qtip-content="Загрузите изображение" qtip-position='left' >Загрузите изображение<span class="text-upload"></span></span>
-							<input  type="file" name="onload_picture" class="input-popup add_file" >
+						<label class="file_upload" >	
+							<span class="login-text-popup">Картинка проекта</span>
+
+					        <span class="button popup">Выбрать</span>
+					        <span class='mark' qtip-content="Загрузите изображение" qtip-position='left'>Загрузите изображение</span>					        	  
+							<input  type="file" name="upload_picture" class="input-popup add_file">
 						</label>
 						<label class="label-popup">
 						    <span class="login-text-popup">URL проекта</span>
@@ -213,9 +215,11 @@
 		<script>window.jQuery || document.write('<script src="bower/jquery/jquery.js"><\/script>')</script>
 		<script src="bower/bPopup/jquery.bpopup.js"></script>
 		<script src='bower/qtip2/jquery.qtip.js'></script>
+		<script src='bower/jquery-placeholder/jquery.placeholder.js'></script>
 		<script src="js/main.js"></script>
 		<script src="js/popup.js"></script>
 		<script src="js/validation.js"></script>
+		<script src="js/placeholder.js"></script>
 	</body>
 </html>
 

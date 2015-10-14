@@ -59,6 +59,7 @@
   padding-left: 10px;
   min-width: 422px;
   min-height: 60px;
+  line-height: 60px;
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
   -ms-border-radius: 4px;
@@ -66,6 +67,7 @@
   border-radius: 4px;
   border: 1px solid #4dcce8;
   margin-bottom: 20px;
+  color: #48cbe8;
  
   
 }
