@@ -20,7 +20,7 @@ var validation = (function(){
 	// Очищает форму при нажатии на кнопку reset
 	var _clearForm = function  (form) {
 		var form = $(this);
-		form.find('.input_name, .input-popup, .input-login, .mark, .textarea, .textarea-popup').trigger('hideTooltip');
+		form.find('.input_name, .input-popup, .input-login, .upload-button, .textarea, .textarea-popup').trigger('hideTooltip');
 		form.find('.has-error').removeClass('has-error');
 	}
 
@@ -74,7 +74,7 @@ var validation = (function(){
 	 	
 	 	console.log('Происходит проверка формы в модуле валидации');
 
-	 	var elements = form.find('input, textarea, .mark').not('input[type="hidden"]'),
+	 	var elements = form.find('input, textarea, .upload-button'),
 	 	valid = true;
 
 	 	// Пройдемся по всем элементам формы
@@ -100,3 +100,8 @@ var validation = (function(){
 })();
 
 validation.init();
+
+
+
+
+

@@ -31,11 +31,13 @@
           <![endif]-->
 	 <!--<script src="/js/modernizr.js"></script>-->
 	</head>
+
 	<body>
 		<!--[if lt IE 9]>
 		<p class="browsehappy">Ваш браузер <strong>устарел</strong>.
 		Пожалуйста<a href="http://browsehappy.com/">обновите</a> его.</p>
 		<![endif]-->
+		
 
 		<!-- Моя верстка  -->
 		<div class="wrapper">
@@ -191,11 +193,11 @@
 							<input  type="text" name="projectName" class="input-popup"  placeholder="Введите название"  qtip-content="Введите имя" qtip-position='left'>
 						</label>
 						<label class="file_upload" >	
-							<span class="login-text-popup">Картинка проекта</span>
-
-					        <span class="button popup">Выбрать</span>
-					        <span class='mark' qtip-content="Загрузите изображение" qtip-position='left'>Загрузите изображение</span>					        	  
-							<input  type="file" name="upload_picture" class="input-popup add_file">
+							<span class="login-text-popup">Картинка проекта</span>					        					        	  
+							<div class="upload-image-form">
+							<input id="upload-file" class="hidden-form" type="file" name="upload" onchange="document.getElementById('fake-upload').value=this.value;">
+							<input id="fake-upload" qtip-position="left" qtip-content="изображение" class="upload-button" type="text" placeholder="Загрузите изображение" name="upload">
+						</div>
 						</label>
 						<label class="label-popup">
 						    <span class="login-text-popup">URL проекта</span>
@@ -215,8 +217,7 @@
 		<script>window.jQuery || document.write('<script src="bower/jquery/jquery.js"><\/script>')</script>
 		<script src="bower/bPopup/jquery.bpopup.js"></script>
 		<script src='bower/qtip2/jquery.qtip.js'></script>
-		<script src='bower/jquery-placeholder/jquery.placeholder.js'></script>
-		<script src="js/main.js"></script>
+		<script src='bower/jquery-placeholder/jquery.placeholder.js'></script>		
 		<script src="js/popup.js"></script>
 		<script src="js/validation.js"></script>
 		<script src="js/placeholder.js"></script>

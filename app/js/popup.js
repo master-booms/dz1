@@ -27,6 +27,8 @@ var myModule = (function(){
 	    	}
 	    });				
 	};
+
+	
 	// Добавляет проект
 	var _addProgect = function (e){
 		console.log('добавление проекта');

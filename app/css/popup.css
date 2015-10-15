@@ -65,54 +65,44 @@
   	color: #48cbe8;
 }
 /*Begin Upload file*/
-.file_upload{
-    display: block;
-    position: relative;                     
-    line-height: 41px;             
-    margin-bottom:10px;
-    margin-top: -7px;
-    background: #fff;
+.upload-image-form { 
+    color: #48cbe8;
+  font-family: 'fira_sanslight';
+  font-size: 13px;
+  height: 40px;
+  background: white;
+  border-radius: 4px;
+  margin-bottom: 5px;
+}
 
+.upload-image-form .upload-button { 
+        box-sizing: border-box;
+     -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  color: #48cbe8;
+  font-family: 'fira_sanslight';
+  font-size: 13px;
+  padding-left: 10px;
+  border: 1px solid #48cbe8;
+  border-radius: 4px;
+  margin-bottom: 5px;
+  height: 40px;
+    line-height: 40px;
+    background-image: url('../img/add_file/add_file_popup.png');
+  background-repeat: no-repeat;
+  background-position: right center;
+  width: 100%;
 }
-.file_upload .button, .file_upload  .mark{
-    display: block;
-    cursor: pointer              
-}
-.file_upload .button.popup{
-    float: right;
-    box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    width: 52px;                 
-    height: 41px;
-    background:url(../img/add_file/add_file_popup.png) no-repeat;
-    text-indent: -9999px;
-    margin-top: -6px;
-    -webkit-border-radius:0 4px  4px 0;
-    -moz-border-radius:0 4px  4px 0;
-    border-radius:0 4px  4px 0; 
-            
-}
-.file_upload .mark{
-      
-    padding-left:10px; 
-    text-align: left;         
-    font-size: 13px;
-    font-family: 'fira_sanslight';
-    border: 1px solid #4dcce8;
-    color: #4dcce8;
-   -webkit-border-radius: 4px;
-   -moz-border-radius: 4px;
-   border-radius: 4px;
-   margin-top: -7px;
-}
-.file_upload input[type=file]{
+.upload-image-form .hidden-form{
+     opacity: 0;
+    filter: alpha(opacity:0);
+    cursor: pointer;
     position: absolute;
-    top: 0;    
-    opacity: 0;
-    left:-9999px;
-
-
+    margin-left: 255px;
+    height: 40px;
+    width: 55px;
 }
+
 /*Upload file fin*/
 
 .textarea-popup{
@@ -147,9 +137,25 @@
     border-radius: 4px;
     border-color: #4dcce8;
 }
+#fake-upload:focus{
+  box-shadow: #4dcce8 0 0 0 2px;
+    border-radius: 4px;
+    border-color: #4dcce8;
+}
+#fake-upload::-webkit-input-placeholder       {text-indent: 0px; color:#4dcce8;   transition: text-indent 0.3s ease;}
+#fake-upload::-moz-placeholder                {text-indent: 0px; color:#4dcce8;   transition: text-indent 0.3s ease;}
+#fake-upload:-ms-input-placeholder            {text-indent: 0px; color:#4dcce8;   transition: text-indent 0.3s ease;}
+#fake-upload:focus::-webkit-input-placeholder {text-indent: 500px;  transition: text-indent 0.3s ease;}
+#fake-upload:focus::-moz-placeholder          {text-indent: 500px; transition: text-indent 0.3s ease;}
+#fake-upload:focus:-ms-input-placeholder      {text-indent: 500px; transition: text-indent 0.3s ease;}
+
+
+
 ::-webkit-input-placeholder       { color:#4dcce8;  }
 ::-moz-placeholder                { color:#4dcce8;  } 
 :-ms-input-placeholder            { color:#4dcce8;  }
+
+
 .button.add{
   min-height: 31px;
   -moz-border-radius: 5px;
