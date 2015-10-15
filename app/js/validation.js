@@ -74,7 +74,7 @@ var validation = (function(){
 	 	
 	 	console.log('Происходит проверка формы в модуле валидации');
 
-	 	var elements = form.find('input, textarea, .upload-button'),
+	 	var elements = form.find('input, textarea, .upload-button').not('input[type="file"]'),
 	 	valid = true;
 
 	 	// Пройдемся по всем элементам формы
