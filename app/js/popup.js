@@ -5,30 +5,30 @@ var myModule = (function(){
 	};
 	// Прослушивает событие
 	var _setUpListners = function  () {
-		$('#add-new-item').on('click', _showModal); // открыть модальное окно 
+		$('#add-new-item').on('click', _showModal); // открыть модальное окно
 		$('#add-new-progect').on('submit', _addProgect); // добавление проекта
 
-	};	
-	// Работает с модальным окном	
+	};
+	// Работает с модальным окном
 	var _showModal = function (e) {
 		console.log('вызов модального окна');
-	    
+
 	    e.preventDefault();
 	    var divPopup = $('#new-progect-popup');
 	    	form = divPopup.find('.form-popup');
 	    divPopup.bPopup({
 	    	speed:650,
 	    	transition:'slideIn',
-	    	
+
 	    	onClose: function () {
 	    		form.find('.error-mess').hide();
 	    		form.find('.success-mess').hide();
 	    		form.trigger('reset');
 	    	}
-	    });				
+	    });
 	};
 
-	
+
 	// Добавляет проект
 	var _addProgect = function (e){
 		console.log('добавление проекта');
@@ -40,8 +40,8 @@ var myModule = (function(){
 			url = 'add_progect.php',
 			defObj = _ajaxForm(form, url);
 
-		//проверка запроса на сервер	
-		if (defObj) {			
+		//проверка запроса на сервер
+		if (defObj) {
 		defObj.done(function(ans) {
 			console.log(ans);
 			var successBox = form.find('.success-mess'),
@@ -50,25 +50,25 @@ var myModule = (function(){
 				console.log(ans.text);
 				errorBox.hide();
 				successBox.show();
-				
+
 			}else{
 				errorBox.show();
 				successBox.hide();
-			}			
+			}
 		})
 		.fail(function() {
 			console.log("error");
 		});
-		}	
+		}
 	};
 	// Универсальная функция
-		// Для ее работы используются 
+		// Для ее работы используются
 		// @form - форма
 		// @url адрес php файла к которому мы обращаемся
 
 		//1.Проверяет форму
 		//2..Собрает данные из формы
-		//3.Возвращает ответ с сервера	
+		//3.Возвращает ответ с сервера
 	var _ajaxForm = function (form, url) {
 
 		if (!validation.validateForm(form)) return false;
@@ -82,12 +82,12 @@ var myModule = (function(){
 			data: data,
 		 }).fail(function(ans) {
 			console.log('Проблемы в PHP');
-			form.find('.error-mess').text('На сервере произошла ошибка').show();	
+			form.find('.error-mess').text('На сервере произошла ошибка').show();
 
 		});
 		 return result;
 	};
-	
+
 	// Возвращаем объект (публичные методы)
 	return {
 		init:init
@@ -95,4 +95,6 @@ var myModule = (function(){
 })();
 
 myModule.init();
+
+
 

@@ -1,5 +1,5 @@
 var validation = (function(){
-	
+
 	// Инициализирует наш модуль
 	var init = function(){
 		_setUpListners();
@@ -10,9 +10,10 @@ var validation = (function(){
 		$('form').on('keydown', '.has-error', _removeError);
 		$('form').on('reset', _clearForm);
 
-	
-	};	
-	//Чистит форму от тултипов  
+
+	};
+
+	//Чистит форму от тултипов
 	var _removeError = function(){
 		$(this).removeClass('has-error');
 
@@ -34,15 +35,15 @@ var validation = (function(){
 				at: 'right center'
 			}
 		}else {
-		  position = {	
+		  position = {
 			my:'right center',
 			at:'left center',
 			adjust:{
 				method:'shift none'
 			}
-		  }	
+		  }
 		}
-	
+
 	// инициализация тултипа
 		element.qtip({
 			content:{
@@ -66,16 +67,17 @@ var validation = (function(){
 			}
 		}).trigger('show');
 
-	
+
 	};
-	
+
 	 // Универсальная функция
 	 var validateForm = function  (form) {
-	 	
+
 	 	console.log('Происходит проверка формы в модуле валидации');
 
 	 	var elements = form.find('input, textarea, .upload-button').not('input[type="file"]'),
 	 	valid = true;
+
 
 	 	// Пройдемся по всем элементам формы
 	 	$.each(elements, function  (index, val) {
@@ -87,19 +89,57 @@ var validation = (function(){
 	 	  	_createQtip(element, pos);
 	 	  	valid = false;
 	 	  }
+
 	 });
+
 	 return valid;
-	};	
+	};
+
+	
+// Валидация по эмейлу 
+	$('#mail').blur(function() {
+		var element = $('#mail'),
+			val = element.val(),
+			pos = element.attr('qtip-position'),
+			$this = $(this);
+		if($this.val() != '') {
+			var pattern = /^([a-z0-9_\.-])+@[a-z0-9-]+\.([a-z]{2,4}\.)?[a-z]{2,4}$/i;
+		if(!pattern.test($this.val())){
+			$('#mail').addClass('has-error');
+			_createQtip(element, pos);
+		} 
+	}
+});
+
+
+
 
 	// Возвращает объект (публичные методы)
 	return {
 		init:init,
-		validateForm:validateForm
+		validateForm:validateForm,
+		
+		
 	};
 
 })();
 
 validation.init();
+
+
+function getName (str){
+	if (str.lastIndexOf('\\')){
+		var i = str.lastIndexOf('\\')+1;
+	}
+	else{
+		var i = str.lastIndexOf('/')+1;
+	}
+	var filename = str.slice(i);
+	var uploaded = document.getElementById("fake-upload");
+	uploaded.innerHTML = filename;
+}
+
+
 
 
 
